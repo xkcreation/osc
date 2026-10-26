@@ -11,3 +11,14 @@ Steps:
 6. Fill the registration form -> "Register Student".
 7. Student details are displayed in a table. Use Logout to end the session.
 8. Stop the server with Ctrl + C.
+
+
+Create an Express app and set up the middleware: express.urlencoded, the static public folder and express-session.
+GET / sends the login page.
+POST /login checks the username and password (admin / 1234). If they are correct, set req.session.loggedIn and redirect to /register. Otherwise show an error message.
+GET /register redirects to the login page if the user is not logged in. Otherwise it sends the registration form.
+POST /register reads all the form fields and checks that the required fields are filled, that the email matches the email pattern and that the mobile number has exactly 10 digits.
+If validation passes, store the student's details in the session and redirect to /student.
+GET /student sends a page that calls /student-data with fetch() and shows the details in a table.
+GET /logout destroys the session and redirects to the login page.
+Start the server on port 3000.
