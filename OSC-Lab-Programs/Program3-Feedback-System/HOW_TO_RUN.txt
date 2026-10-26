@@ -11,3 +11,12 @@ Steps:
 5. Open browser:  http://localhost/Program3-Feedback-System/index.php
 6. Fill Name, Email, Feedback -> Submit.
 7. Click "View Data" to see all feedback in a table (view.php).
+
+
+Create the database feedbackdb and a table feedback with the columns id, name, email and message.
+In db.php, connect to MySQL with mysqli_connect() and stop with an error message if the connection fails.
+In index.php, include db.php and display a form with the fields name, email and feedback.
+When the form is submitted, escape the three inputs with mysqli_real_escape_string() and run an INSERT query.
+Show an alert that the feedback was submitted successfully, or print the error if the query fails.
+In view.php, run SELECT * FROM feedback and show every row in an HTML table, escaping the output with htmlspecialchars().
+Add links to move between the form page and the view page.
