@@ -19,3 +19,9 @@ Quick table:
   Program 7 : npm install -> node server.js -> http://localhost:3000
 
 Push everything to GitHub: see Program8-Git-Operations/HOW_TO_RUN.txt
+
+
+https://mcasem3.vercel.app/
+https://tinyurl.com/karuppu-07
+https://ajith-one.vercel.app/
+https://github.com/MuttaKalaki/osc
