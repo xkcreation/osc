@@ -1,0 +1,37 @@
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <GitHub-URL>
+git push -u origin main
+
+
+# 1. Unga name configure panna
+git config --global user.name "YourUsername"
+
+# 2. Unga mail ID configure panna
+git config --global user.email "your-email@gmail.com"
+
+# 3. Git initialize panna
+git init
+
+# 4. Status check panna (files red color-la kaatum)
+git status
+
+# 5. Ella files-ayum add panna
+git add .
+
+# 6. Commit panna
+git commit -m "Initial commit of OSC Lab Programs"
+
+# 7. Branch-ah main-ku maatha
+git branch -M main
+
+# 8. Unga GitHub repo link add panna
+git remote add origin https://github.com/YourUsername/YourRepoName.git
+
+# 9. Direct-aa push panna
+git push -u origin main
+
+# 10. History / Commit verify panna
+git log --oneline

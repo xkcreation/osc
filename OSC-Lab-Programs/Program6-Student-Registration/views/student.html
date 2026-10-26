@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title>Student Details</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<div class="container">
+<h1>Student Registration Successful</h1>
+<div id="studentDetails">Loading student details...</div>
+<br />
+<a class="button" href="/register"> Register Another Student </a>
+<a class="logout" href="/logout"> Logout </a>
+</div>
+<script>
+fetch("/student-data")
+  .then((response) => response.json())
+  .then((student) => {
+    document.getElementById("studentDetails").innerHTML = `
+<table>
+<tr><th>Student Name</th><td>${student.name}</td></tr>
+<tr><th>Register Number</th><td>${student.regno}</td></tr>
+<tr><th>Email</th><td>${student.email}</td></tr>
+<tr><th>Mobile Number</th><td>${student.mobile}</td></tr>
+<tr><th>Gender</th><td>${student.gender}</td></tr>
+<tr><th>Date of Birth</th><td>${student.dob}</td></tr>
+<tr><th>Department</th><td>${student.department}</td></tr>
+<tr><th>Course</th><td>${student.course}</td></tr>
+<tr><th>Year</th><td>${student.year}</td></tr>
+<tr><th>Address</th><td>${student.address}</td></tr>
+<tr><th>Skills</th><td>${student.skills}</td></tr>
+</table>
+`;
+  });
+</script>
+</body>
+</html>

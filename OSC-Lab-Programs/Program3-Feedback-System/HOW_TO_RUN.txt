@@ -1,0 +1,13 @@
+PROGRAM 3 - FEEDBACK SYSTEM (PHP + MySQL)
+==========================================
+Requirements : XAMPP (Apache + MySQL)
+
+Steps:
+1. Copy folder "Program3-Feedback-System" into  C:\xampp\htdocs\
+2. Start "Apache" and "MySQL" in XAMPP Control Panel.
+3. Open http://localhost/phpmyadmin -> click "Import" -> choose database.sql -> Go.
+   (This creates database "feedbackdb" and table "feedback".)
+4. If your MySQL has a password / different port, edit db.php.
+5. Open browser:  http://localhost/Program3-Feedback-System/index.php
+6. Fill Name, Email, Feedback -> Submit.
+7. Click "View Data" to see all feedback in a table (view.php).

@@ -1,0 +1,17 @@
+PROGRAM 2 - ELECTRICITY BILL CALCULATION (PHP)
+===============================================
+Requirements : XAMPP (Apache + PHP)   OR   PHP installed
+
+Method A - XAMPP
+1. Copy this folder "Program2-Electricity-Bill" into  C:\xampp\htdocs\
+2. Open XAMPP Control Panel -> Start "Apache".
+3. Open browser:  http://localhost/Program2-Electricity-Bill/index.php
+4. Enter Consumer Name and Units -> click "Generate Bill".
+
+Method B - PHP built-in server (no XAMPP)
+1. Open terminal inside this folder.
+2. Run:   php -S localhost:8000
+3. Open:  http://localhost:8000/index.php
+
+Tariff used:  First 100 units @ Rs 2.50, remaining @ Rs 3.50, + Rs 50 fixed charge.
+Sample: 1000 units -> Rs 3,450.00

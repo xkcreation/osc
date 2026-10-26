@@ -1,0 +1,23 @@
+PROGRAM 7 - EMPLOYEE INFORMATION PORTAL (Node.js + Express + MongoDB)
+=====================================================================
+Requirements :
+  - Node.js            (https://nodejs.org)
+  - MongoDB Community  (https://www.mongodb.com/try/download/community)
+    (or a free MongoDB Atlas cluster - then paste its URI in .env)
+
+Steps:
+1. Start MongoDB service (Windows: it runs automatically after install;
+   or run "mongod" in a terminal).
+2. Open terminal inside folder "Program7-Employee-Portal".
+3. Check the ".env" file (already provided):
+      MONGO_URI=mongodb://127.0.0.1:27017/EmployeeDB
+      PORT=3000
+4. Install packages (only first time):   npm install
+5. Start the server:                     node server.js
+6. Open browser:  http://localhost:3000
+7. Login ->  Username: admin   Password: password123
+   (default admin is created automatically on first run)
+8. Use "+ Add Employee", View, Edit, Delete, Search & Filter.
+9. Stop the server with Ctrl + C.
+
+NOTE: Do NOT upload your real ".env" to GitHub (it is listed in .gitignore).

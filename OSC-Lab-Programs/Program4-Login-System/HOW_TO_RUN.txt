@@ -1,0 +1,14 @@
+PROGRAM 4 - USER LOGIN (PHP + MySQL + Sessions)
+================================================
+Requirements : XAMPP (Apache + MySQL)
+
+Steps:
+1. Copy folder "Program4-Login-System" into  C:\xampp\htdocs\
+2. Start "Apache" and "MySQL" in XAMPP Control Panel.
+3. Open http://localhost/phpmyadmin -> Import -> choose database.sql -> Go.
+   (Creates database "login", table "user" and a test user.)
+4. Open db.php and check the $port value:
+      3306 = XAMPP default,   3308 = used in the lab record.
+5. Open browser:  http://localhost/Program4-Login-System/login.php
+6. Login with   Username: admin     Password: admin@123
+7. Dashboard shows "Welcome, admin". Click Logout to destroy the session.

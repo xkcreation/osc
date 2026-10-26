@@ -1,0 +1,24 @@
+PROGRAM 8 - GIT REPOSITORY: BASIC VERSION CONTROL OPERATIONS
+=============================================================
+Requirements : Git (https://git-scm.com) and a GitHub account
+
+Steps:
+1. Create a NEW empty repository on GitHub (e.g. "OSC-Lab-Programs").
+   Copy its URL  (https://github.com/<your-username>/OSC-Lab-Programs.git)
+2. Open terminal (Git Bash) inside the main folder "OSC-Lab-Programs".
+3. Run the commands one by one:
+
+     git init
+     git add .
+     git commit -m "Initial commit"
+     git branch -M main
+     git remote add origin https://github.com/<your-username>/OSC-Lab-Programs.git
+     git push -u origin main
+
+4. Login to GitHub in the browser when asked.
+5. Refresh your GitHub repository page - all program folders will be visible.
+
+Useful extra commands:
+     git status        -> see changed files
+     git log --oneline -> see commit history
+     git pull          -> get latest changes

@@ -1,0 +1,17 @@
+body { font-family:Arial,sans-serif; background:#f2f2f2; margin:0; padding:30px; }
+.container { width:650px; max-width:90%; margin:auto; background:white; padding:30px; border-radius:10px; box-shadow:0 0 10px #aaa; }
+h1 { text-align:center; margin-bottom:25px; }
+h2 { text-align:center; }
+label { display:block; margin-top:12px; font-weight:bold; }
+input, select, textarea { width:100%; padding:10px; margin-top:5px; box-sizing:border-box; border:1px solid #aaa; border-radius:5px; }
+.radio { margin-top:8px; }
+.radio input { width:auto; margin-right:5px; }
+.skills label { font-weight:normal; }
+.skills input { width:auto; }
+button, .button { display:block; width:100%; padding:12px; margin-top:20px; background:#333; color:white; border:none; border-radius:5px; text-align:center; text-decoration:none; cursor:pointer; box-sizing:border-box; }
+button:hover, .button:hover { background:#555; }
+.logout { display:block; text-align:center; margin-top:20px; color:red; }
+.info { text-align:center; margin-top:20px; }
+table { width:100%; border-collapse:collapse; }
+th, td { border:1px solid #aaa; padding:12px; text-align:left; }
+th { width:35%; }

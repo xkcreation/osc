@@ -1,0 +1,13 @@
+PROGRAM 1 - IMAGE SLIDESHOW (HTML + CSS + JavaScript)
+======================================================
+Requirements : Any web browser (Chrome / Edge / Firefox)
+
+Steps:
+1. Open this folder: Program1-Image-Slideshow
+2. The "assets" folder has sample placeholder images (img1.jpg - img4.jpg).
+   Replace them with your own images using the SAME file names.
+3. Double-click index.html  (or right click -> Open with -> Browser).
+4. The image changes automatically every 2 seconds and repeats.
+
+(Optional) Run in VS Code: install "Live Server" extension -> right click
+index.html -> "Open with Live Server".

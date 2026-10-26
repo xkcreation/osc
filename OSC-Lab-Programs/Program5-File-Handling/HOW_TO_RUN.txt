@@ -1,0 +1,10 @@
+PROGRAM 5 - FILE HANDLING (Node.js fs module)
+==============================================
+Requirements : Node.js (https://nodejs.org)
+
+Steps:
+1. Open terminal / VS Code terminal inside folder "Program5-File-Handling".
+2. Run:   node app.js
+3. Output: "File created" followed by the file content.
+4. A new file "page.txt" is created in the same folder.
+(No npm install needed - fs is a built-in module.)

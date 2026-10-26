@@ -1,0 +1,21 @@
+OSC LAB PROGRAMS - OVERALL GUIDE
+=================================
+Each program has its own folder with its own HOW_TO_RUN.txt.
+
+Software to install once:
+  1. XAMPP        -> Programs 2, 3, 4 (PHP + MySQL)
+  2. Node.js      -> Programs 5, 6, 7
+  3. MongoDB      -> Program 7
+  4. Git + GitHub -> Program 8 (also to upload this whole folder)
+  5. VS Code      -> to edit code (optional)
+
+Quick table:
+  Program 1 : open index.html in browser
+  Program 2 : XAMPP -> http://localhost/Program2-Electricity-Bill/index.php
+  Program 3 : import database.sql -> http://localhost/Program3-Feedback-System/index.php
+  Program 4 : import database.sql -> http://localhost/Program4-Login-System/login.php
+  Program 5 : node app.js
+  Program 6 : npm install -> node app.js -> http://localhost:3000
+  Program 7 : npm install -> node server.js -> http://localhost:3000
+
+Push everything to GitHub: see Program8-Git-Operations/HOW_TO_RUN.txt

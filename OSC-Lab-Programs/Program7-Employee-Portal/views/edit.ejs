@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><title>Edit Employee</title><%- include('_style') %></head>
+<body>
+<nav><b>Employee Portal</b><a class="lo" href="/logout">Logout</a></nav>
+<div class="wrap"><div class="card">
+<h1>Edit Employee</h1>
+<form method="post" action="/edit/<%= employee._id %>">
+<label>Employee ID</label><input name="empId" value="<%= employee.empId %>" required>
+<label>Name</label><input name="name" value="<%= employee.name %>" required>
+<label>Email</label><input type="email" name="email" value="<%= employee.email %>" required>
+<label>Phone</label><input name="phone" value="<%= employee.phone %>" required>
+<label>Department</label><input name="department" value="<%= employee.department %>" required>
+<label>Designation</label><input name="designation" value="<%= employee.designation %>" required>
+<label>Salary</label><input type="number" name="salary" value="<%= employee.salary %>" required>
+<label>Joining Date</label><input type="date" name="joiningDate" value="<%= employee.joiningDate.toISOString().split('T')[0] %>" required>
+<label>Address</label><textarea name="address" rows="3"><%= employee.address %></textarea>
+<label>Skills (comma separated)</label><input name="skills" value="<%= employee.skills.join(', ') %>">
+<button class="btn dark" style="margin-top:18px">Update</button>
+<a class="btn" href="/">Cancel</a>
+</form></div></div></body></html>
