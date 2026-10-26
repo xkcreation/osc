@@ -21,3 +21,14 @@ Steps:
 9. Stop the server with Ctrl + C.
 
 NOTE: Do NOT upload your real ".env" to GitHub (it is listed in .gitignore).
+
+
+Define the Mongoose schemas Employee (id, name, email, phone, department, designation, salary, joining date, address, skills) and Admin (username, password).
+Connect to MongoDB. If no admin exists, create a default admin whose password is hashed with bcrypt.
+Configure Express with the EJS view engine, express.urlencoded and express-session.
+Write the requireAuth middleware, which redirects to /login when no admin is logged in.
+POST /login finds the admin, compares the password with bcrypt.compare() and stores the admin id in the session.
+GET / (dashboard) lists the employees sorted by joining date and supports a search by name and a filter by department.
+/add shows the add form and saves a new employee, splitting the skills text at commas into an array.
+/view/:id shows one employee, /edit/:id updates an employee and /delete/:id removes an employee.
+GET /logout destroys the session. Start the server on the configured port.
