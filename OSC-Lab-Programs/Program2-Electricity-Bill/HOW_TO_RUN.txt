@@ -15,3 +15,11 @@ Method B - PHP built-in server (no XAMPP)
 
 Tariff used:  First 100 units @ Rs 2.50, remaining @ Rs 3.50, + Rs 50 fixed charge.
 Sample: 1000 units -> Rs 3,450.00
+
+
+Display an HTML form that asks for the consumer name and the units consumed.
+When the form is submitted with the POST method, read the name (cleaned with htmlspecialchars) and the units.
+If the units are 100 or fewer, energy charges = units x 2.50. Otherwise, energy charges = (100 x 2.50) + (units - 100) x 3.50.
+Add the fixed charges of 50.00 to get the total bill amount.
+Set the flag $show_bill to true.
+If the flag is true, display the bill with the name, units, energy charges, fixed charges and the total amount.
