@@ -12,3 +12,12 @@ Steps:
 5. Open browser:  http://localhost/Program4-Login-System/login.php
 6. Login with   Username: admin     Password: admin@123
 7. Dashboard shows "Welcome, admin". Click Logout to destroy the session.
+
+
+Create the database login and a table user with the columns username and password.
+In db.php, connect to MySQL using the correct host, user, password, database and port.
+In login.php, start the session and display a form for the username and password.
+On submit, escape both inputs and search the user table for a row with the same username and password.
+If exactly one row is found, store the username in $_SESSION and redirect to dashboard.php. Otherwise show the message "Invalid username or password".
+In dashboard.php, check the session. If no user is logged in, redirect to login.php. Otherwise show a welcome message and a logout link.
+In logout.php, destroy the session and redirect to login.php.
