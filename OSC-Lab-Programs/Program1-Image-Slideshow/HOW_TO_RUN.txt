@@ -11,3 +11,10 @@ Steps:
 
 (Optional) Run in VS Code: install "Live Server" extension -> right click
 index.html -> "Open with Live Server".
+
+Create index.html with one <img> element and link style.css and app.js to it.
+In style.css, set the size of the image to 500 px x 500 px and centre it.
+In app.js, store the paths of all the images in an array and set the starting index to 0.
+Define a function that increases the index by 1, resets it to 0 after the last image and sets the image src to the image at that index.
+Call the function repeatedly every 2000 milliseconds with setInterval().
+Open index.html in a browser to see the slideshow.
