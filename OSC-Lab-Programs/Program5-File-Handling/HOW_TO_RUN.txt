@@ -8,3 +8,11 @@ Steps:
 3. Output: "File created" followed by the file content.
 4. A new file "page.txt" is created in the same folder.
 (No npm install needed - fs is a built-in module.)
+
+
+Import the built-in fs module with require('fs').
+Store the file name and the text to be written in variables.
+Call fs.writeFile() to create the file and write the data into it.
+If an error occurs while writing, print the error and stop.
+If the write succeeds, print "File created successfully!" and call fs.readFile() with the utf8 encoding inside the callback.
+If an error occurs while reading, print the error. Otherwise print the file content.
